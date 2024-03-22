@@ -18,13 +18,14 @@
     $name= 7.4564;
 
     //BooLean
+    true = 2
+    false= 0
 
     //Array
-    $names = array("Amy", "Gabriela", "Galicia");
-    echo $names['2'];
+    $names = array("Amy", "Gabriela", "Galicia"),
+    echo $names{'0'};
 
 ?>
-
 
 </body>
 </html>
