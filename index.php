@@ -9,7 +9,7 @@
 
 <?php
     
-  
+    echo str_replace("Amy", "Claudia", "Hi Amy");
 
 ?>
 
