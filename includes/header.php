@@ -32,6 +32,25 @@
     </div>
   </div>
 </nav>
+<header>
+  <nav>
+    <div class="header-login">
+      <?php
+    if (isset($_SESSION['userId'])) {
+            echo '<form action="includes/logout.inc.php" method ="post">
+            <button type="submit" name="logout-submit">Logout</button>
+          </form>';
+          }
+          else{
+            echo '<form action="includes/login.inc.php" method ="post">
+            <input type="text" name="miluid" placeholder="Username/E-mail...">
+            <input type="password" name="pwd" placeholder="Password...">
+            <button type="submit" name="login-submit">login</button>
+          </form>
+          <a href="signup.php">Signup</a>';
+          }
+        ?>
+  
       <?php 
 $_SESSION['username'] = "amygal29 ";
 echo $_SESSION['username'];
@@ -42,5 +61,4 @@ if (!isset($_SESSION['username'])) {
 }
 
 ?>
-
 

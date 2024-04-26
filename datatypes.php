@@ -2,7 +2,6 @@
     include 'includes/header.php';
 ?>
 
-</html>
 <?php
     //String
     $name = 'I like icecream';
